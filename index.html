@@ -6,470 +6,187 @@
     <title>MetaPoke - Build Smarter, Win More</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>
-    .contact-note {
-        font-size: 0.55rem;
-        line-height: 1.9;
-    }
-
-    .contact-form input,
-    .contact-form select,
-    .contact-form textarea {
-        width: 100%;
-        padding: 0.9rem;
-        border-radius: 10px;
-        border: 2px solid #DC0A2D;
-        font-family: 'Press Start 2P', cursive;
-        font-size: 0.5rem;
-        outline: none;
-    }
-
-    .contact-form textarea {
-        resize: vertical;
-    }
-</style>
-
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <div class="logo">MetaPoke</div>
-            <nav>
-                <ul>
-                    <li><a href="#" onclick="showPage('home'); return false;">HOME</a></li>
-                    <li><a href="#" onclick="showPage('strategy'); return false;">STRATEGY</a></li>
-                    <li><a href="#" onclick="showPage('pokemon-list'); return false;">POKEMON LIST</a></li>
-                    <li><a href="https://play.pokemonshowdown.com/" target="_blank">BATTLE</a></li>
-                    <li><a href="#" onclick="showPage('coaching'); return false;">COACHING</a></li>
-                    <li><a href="#" onclick="showPage('contact'); return false;">CONTACT</a></li>
-                </ul>
-            </nav>
-        </div>
+        <table width="100%">
+            <tr>
+                <td><h1>MetaPoke</h1></td>
+                <td align="right">
+                    <nav>
+                        <a href="#" onclick="showPage('home'); return false;">HOME</a> |
+                        <a href="#" onclick="showPage('strategy'); return false;">STRATEGY</a> |
+                        <a href="#" onclick="showPage('contact'); return false;">CONTACT</a>
+                    </nav>
+                </td>
+            </tr>
+        </table>
     </header>
 
     <!-- HOME PAGE -->
     <div id="home" class="page-content active">
         <section class="hero">
-            <h1>BUILD SMARTER<br>WIN MORE</h1>
+            <h1>BUILD SMARTER WIN MORE</h1>
             <p>MASTER COMPETITIVE TEAM BUILDING</p>
-            <a href="#" onclick="showPage('strategy'); return false;" class="cta-button">START TRAINING</a>
         </section>
-
-        <div class="pokeball-divider">
-            <div class="pokeball"></div>
-        </div>
 
         <section class="mission-section">
             <h2>METAPOKE HELPS YOU BECOME THE VERY BEST</h2>
-            <p>We empower Pokemon trainers to build championship-level competitive teams. Learn advanced strategies, type matchups, EV training, IV breeding, and team synergy. Master the metagame with our comprehensive guides, tier lists, and battle analysis tools.</p>
+            <p>We empower Pokemon trainers to build championship-level competitive teams. Learn advanced strategies, type matchups, EV training, IV breeding, and team synergy.</p>
         </section>
 
-        <section class="content-section">
-            <div class="content-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3>TEAM BUILDER</h3>
-                    <p>Create balanced teams with our advanced team composition analyzer. Check type coverage, weaknesses, and synergy ratings.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">⚔️</div>
-                    <h3>BATTLE STRATEGY</h3>
-                    <p>Learn winning strategies from top competitive players. Study battle replays and understand key decision points.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📈</div>
-                    <h3>TIER LISTS</h3>
-                    <p>Stay updated with current metagame tier rankings. Know which Pokemon dominate each competitive format.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💪</div>
-                    <h3>EV TRAINING</h3>
-                    <p>Master effort value optimization with our training calculators and optimal spread recommendations.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🧬</div>
-                    <h3>IV BREEDING</h3>
-                    <p>Perfect your Pokemon's genetics. Learn breeding chains and hidden ability inheritance.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🏆</div>
-                    <h3>TOURNAMENT PREP</h3>
-                    <p>Get tournament-ready with meta predictions, team reports, and championship coaching.</p>
-                </div>
-            </div>
-        </section>
+        <div class="feature-card">
+            <h3>TEAM BUILDER</h3>
+            <p>Create balanced teams with our advanced team composition analyzer.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>BATTLE STRATEGY</h3>
+            <p>Learn winning strategies from top competitive players.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>TIER LISTS</h3>
+            <p>Stay updated with current metagame tier rankings.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>EV TRAINING</h3>
+            <p>Master effort value optimization with our training calculators.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>IV BREEDING</h3>
+            <p>Perfect your Pokemon's genetics.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>TOURNAMENT PREP</h3>
+            <p>Get tournament-ready with meta predictions and team reports.</p>
+        </div>
     </div>
 
     <!-- STRATEGY PAGE -->
     <div id="strategy" class="page-content strategy-page">
-
         <section class="hero">
-            <h1>COMPETITIVE<br>STRATEGY GUIDE</h1>
+            <h1>COMPETITIVE STRATEGY GUIDE</h1>
             <p>LEARN FROM THE CHAMPIONS</p>
         </section>
 
-        <div class="pokeball-divider">
-            <div class="pokeball"></div>
+        <div class="strategy-card">
+            <h3>TEAM BUILDING BASICS</h3>
+            <ul>
+                <li>Balance offensive and defensive Pokemon</li>
+                <li>Cover all type weaknesses</li>
+                <li>Include speed control options</li>
+                <li>Have win conditions identified</li>
+                <li>Consider move coverage</li>
+                <li>Plan for common threats</li>
+            </ul>
         </div>
 
-        <div class="strategy-grid">
-            <div class="strategy-card">
-                <h3>TEAM BUILDING BASICS</h3>
-                <ul>
-                    <li>Balance offensive and defensive Pokemon</li>
-                    <li>Cover all type weaknesses</li>
-                    <li>Include speed control options</li>
-                    <li>Have win conditions identified</li>
-                    <li>Consider move coverage</li>
-                    <li>Plan for common threats</li>
-                </ul>
-            </div>
-
-            <div class="strategy-card">
-                <h3>CORE STRATEGIES</h3>
-                <ul>
-                    <li>Offensive cores: Fire-Water-Grass</li>
-                    <li>Defensive cores: Fairy-Steel-Dragon</li>
-                    <li>Weather teams setup</li>
-                    <li>Trick Room strategies</li>
-                    <li>Hazard stacking tactics</li>
-                    <li>Volt-Turn momentum</li>
-                </ul>
-            </div>
-
-            <div class="strategy-card">
-                <h3>ADVANCED TACTICS</h3>
-                <ul>
-                    <li>Prediction and double switches</li>
-                    <li>Momentum management</li>
-                    <li>Sacrifice plays timing</li>
-                    <li>End-game scenarios</li>
-                    <li>Mind games and bluffs</li>
-                    <li>Team preview analysis</li>
-                </ul>
-            </div>
-
-            <div class="strategy-card">
-                <h3>EV TRAINING</h3>
-                <ul>
-                    <li>252 HP for max bulk</li>
-                    <li>Speed tier optimization</li>
-                    <li>Damage calc spreads</li>
-                    <li>Mixed attacker builds</li>
-                    <li>Priority move users</li>
-                    <li>Trick Room 0 Speed IVs</li>
-                </ul>
-            </div>
-
-            <div class="strategy-card">
-                <h3>COMPETITIVE FORMATS</h3>
-                <ul>
-                    <li>OU (OverUsed) tier rules</li>
-                    <li>VGC doubles format</li>
-                    <li>Ubers legendary teams</li>
-                    <li>Monotype challenges</li>
-                    <li>Little Cup strategies</li>
-                    <li>Random Battles tips</li>
-                </ul>
-            </div>
-
-            <div class="strategy-card">
-                <h3>METAGAME KNOWLEDGE</h3>
-                <ul>
-                    <li>Current tier placements</li>
-                    <li>Common team archetypes</li>
-                    <li>Meta threats to prepare for</li>
-                    <li>Ban list awareness</li>
-                    <li>Usage statistics review</li>
-                    <li>Tournament trends</li>
-                </ul>
-            </div>
+        <div class="strategy-card">
+            <h3>CORE STRATEGIES</h3>
+            <ul>
+                <li>Offensive cores: Fire-Water-Grass</li>
+                <li>Defensive cores: Fairy-Steel-Dragon</li>
+                <li>Weather teams setup</li>
+                <li>Trick Room strategies</li>
+                <li>Hazard stacking tactics</li>
+                <li>Volt-Turn momentum</li>
+            </ul>
         </div>
 
-        <div class="pokeball-divider">
-            <div class="pokeball"></div>
+        <div class="strategy-card">
+            <h3>ADVANCED TACTICS</h3>
+            <ul>
+                <li>Prediction and double switches</li>
+                <li>Momentum management</li>
+                <li>Sacrifice plays timing</li>
+                <li>End-game scenarios</li>
+                <li>Mind games and bluffs</li>
+                <li>Team preview analysis</li>
+            </ul>
+        </div>
+
+        <div class="strategy-card">
+            <h3>EV TRAINING</h3>
+            <ul>
+                <li>252 HP for max bulk</li>
+                <li>Speed tier optimization</li>
+                <li>Damage calc spreads</li>
+                <li>Mixed attacker builds</li>
+                <li>Priority move users</li>
+                <li>Trick Room 0 Speed IVs</li>
+            </ul>
+        </div>
+
+        <div class="strategy-card">
+            <h3>COMPETITIVE FORMATS</h3>
+            <ul>
+                <li>OU (OverUsed) tier rules</li>
+                <li>VGC doubles format</li>
+                <li>Ubers legendary teams</li>
+                <li>Monotype challenges</li>
+                <li>Little Cup strategies</li>
+                <li>Random Battles tips</li>
+            </ul>
+        </div>
+
+        <div class="strategy-card">
+            <h3>METAGAME KNOWLEDGE</h3>
+            <ul>
+                <li>Current tier placements</li>
+                <li>Common team archetypes</li>
+                <li>Meta threats to prepare for</li>
+                <li>Ban list awareness</li>
+                <li>Usage statistics review</li>
+                <li>Tournament trends</li>
+            </ul>
         </div>
     </div>
 
-<!-- CONTACT PAGE -->
-<div id="contact" class="page-content">
-    <section class="hero">
-        <h1>CONTACT<br>METAPOKE</h1>
-        <p>QUESTIONS? COACHING? COLLABS?</p>
-    </section>
-
-    <div class="pokeball-divider">
-        <div class="pokeball"></div>
-    </div>
-
-    <section class="mission-section">
-        <h2>GET IN TOUCH</h2>
-        <p class="contact-note">
-            Send us a message and we’ll get back to you within 1–2 business days.
-            For coaching requests, include your format (OU/VGC), your goals, and a sample team.
-        </p>
-    </section>
-
-    <section class="content-section">
-        <div class="mission-section" style="max-width: 900px;">
-            <form action="#" method="GET" class="contact-form">
-    <label for="name">NAME</label><br>
-    <input id="name" name="name" type="text" required><br><br>
-
-    <label for="email">EMAIL</label><br>
-    <input id="email" name="email" type="email" required><br><br>
-
-    <label for="topic">TOPIC</label><br>
-    <select id="topic" name="topic" required>
-        <option value="coaching">Coaching</option>
-        <option value="team-review">Team Review</option>
-        <option value="partnership">Partnership</option>
-        <option value="other">Other</option>
-    </select><br><br>
-
-    <label for="message">MESSAGE</label><br>
-    <textarea id="message" name="message" rows="5" required></textarea><br><br>
-
-    <button type="submit" class="plan-button">SEND</button>
-</form>
-
-        </div>
-    </section>
-
-    <div class="pokeball-divider">
-        <div class="pokeball"></div>
-    </div>
-</div>
-
-
-    <!-- POKEMON LIST PAGE -->
-<div id="pokemon-list" class="page-content">
-    <section class="hero">
-        <h1>COMPETITIVE<br>TIER LIST</h1>
-        <p>TOP POKEMON BY TIER</p>
-    </section>
-
-    <div class="pokeball-divider">
-        <div class="pokeball"></div>
-    </div>
-
-    <div class="pokedex-header">
-    <img src="pokedex.jpg" alt="Pokédex interface">
-    </div>
-
-
-    <div class="pokemon-list-section">
-
-        <!-- S TIER -->
-        <div class="tier-section">
-            <div class="tier-header">S TIER — META DEFINING</div>
-            <div class="tier-content">
-                <div class="pokemon-grid">
-                    <div class="pokemon-item">
-                        <div class="pokemon-item-name">DRAGAPULT</div>
-                        <div class="pokemon-item-type">Dragon / Ghost</div>
-                    </div>
-                    <div class="pokemon-item">
-                        <div class="pokemon-item-name">URSHIFU</div>
-                        <div class="pokemon-item-type">Fighting / Dark</div>
-                    </div>
-                    <div class="pokemon-item">
-                        <div class="pokemon-item-name">CINDERACE</div>
-                        <div class="pokemon-item-type">Fire</div>
-                    </div>
-                    <div class="pokemon-item">
-                        <div class="pokemon-item-name">RAGING BOLT</div>
-                        <div class="pokemon-item-type">Electric / Dragon</div>
-                    </div>
-                    <div class="pokemon-item">
-                        <div class="pokemon-item-name">FLUTTER MANE</div>
-                        <div class="pokemon-item-type">Ghost / Fairy</div>
-                    </div>
-                    <div class="pokemon-item">
-                        <div class="pokemon-item-name">GHOLDENGO</div>
-                        <div class="pokemon-item-type">Steel / Ghost</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- A TIER -->
-        <div class="tier-section">
-            <div class="tier-header">A TIER — HIGHLY VIABLE</div>
-            <div class="tier-content">
-                <div class="pokemon-grid">
-                    <div class="pokemon-item">
-                        <div class="pokemon-item-name">RILLABOOM</div>
-                        <div class="pokemon-item-type">Grass</div>
-                    </div>
-                    <div class="pokemon-item">
-                        <div class="pokemon-item-name">PRIMARINA</div>
-                        <div class="pokemon-item-type">Water / Fairy</div>
-                    </div>
-                    <div class="pokemon-item">
-                        <div class="pokemon-item-name">IRON VALIANT</div>
-                        <div class="pokemon-item-type">Fairy / Fighting</div>
-                    </div>
-                    <div class="pokemon-item">
-                        <div class="pokemon-item-name">CORVIKNIGHT</div>
-                        <div class="pokemon-item-type">Flying / Steel</div>
-                    </div>
-                    <div class="pokemon-item">
-                        <div class="pokemon-item-name">PELIPPER</div>
-                        <div class="pokemon-item-type">Water / Flying</div>
-                    </div>
-                    <div class="pokemon-item">
-                        <div class="pokemon-item-name">LANDORUS-THERIAN</div>
-                        <div class="pokemon-item-type">Ground / Flying</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- B TIER -->
-        <div class="tier-section">
-            <div class="tier-header">B TIER — SOLID OPTIONS</div>
-            <div class="tier-content">
-                <div class="pokemon-grid">
-                    <div class="pokemon-item">
-                        <div class="pokemon-item-name">LYCANROC</div>
-                        <div class="pokemon-item-type">Rock</div>
-                    </div>
-                    <div class="pokemon-item">
-                        <div class="pokemon-item-name">AZUMARILL</div>
-                        <div class="pokemon-item-type">Water / Fairy</div>
-                    </div>
-                    <div class="pokemon-item">
-                        <div class="pokemon-item-name">SCIZOR</div>
-                        <div class="pokemon-item-type">Bug / Steel</div>
-                    </div>
-                    <div class="pokemon-item">
-                        <div class="pokemon-item-name">ROTOM-WASH</div>
-                        <div class="pokemon-item-type">Electric / Water</div>
-                    </div>
-                    <div class="pokemon-item">
-                        <div class="pokemon-item-name">ALOLAN MAROWAK</div>
-                        <div class="pokemon-item-type">Fire / Ghost</div>
-                    </div>
-                    <div class="pokemon-item">
-                        <div class="pokemon-item-name">TORNADUS</div>
-                        <div class="pokemon-item-type">Flying</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-        <div class="pokeball-divider">
-            <div class="pokeball"></div>
-        </div>
-    </div>
-
-    <!-- COACHING PAGE -->
-    <div id="coaching" class="page-content">
+    <!-- CONTACT PAGE -->
+    <div id="contact" class="page-content">
         <section class="hero">
-            <h1>PROFESSIONAL<br>COACHING</h1>
-            <p>TRAIN WITH THE BEST</p>
+            <h1>CONTACT US</h1>
+            <p>GET IN TOUCH</p>
         </section>
 
-        <div class="pokeball-divider">
-            <div class="pokeball"></div>
-        </div>
+        <section class="mission-section">
+            <h2>REACH OUT TO US</h2>
+            <p>Have questions about competitive Pokemon team building? Want to join our community? Get in touch with us!</p>
+            
+            <form>
+                <p><label>Name:</label><br>
+                <input type="text" name="name" style="width: 100%; padding: 10px; margin: 10px 0;"></p>
+                
+                <p><label>Email:</label><br>
+                <input type="email" name="email" style="width: 100%; padding: 10px; margin: 10px 0;"></p>
+                
+                <p><label>Message:</label><br>
+                <textarea name="message" rows="5" style="width: 100%; padding: 10px; margin: 10px 0;"></textarea></p>
+                
+                <p><input type="submit" value="SEND MESSAGE" style="background: #DC0A2D; color: white; border: 3px solid #DC0A2D; padding: 15px 30px; font-family: 'Press Start 2P', cursive; font-size: 0.6rem;"></p>
+            </form>
+            
+            <hr style="margin: 30px 0; border: 2px solid #DC0A2D;">
+            
+            <p>Email: contact@metapoke.com</p>
+            <p>Discord: MetaPoke Community</p>
+            <p>Twitter: @MetaPoke</p>
+            <p>Reddit: r/MetaPoke</p>
+        </section>
+    </div>
 
-        <div class="coaching-section">
-            <div class="coaching-hero">
-                <h2>ELEVATE YOUR GAME</h2>
-                <p>Get personalized coaching from top-ranked competitive players. Master team building, battle tactics, and tournament preparation with one-on-one guidance.</p>
-            </div>
-
-            <div class="coaching-plans">
-                <div class="plan-card">
-                    <div class="plan-title">STARTER</div>
-                    <div class="plan-price">$29/MONTH</div>
-                    <ul class="plan-features">
-                        <li>2 coaching sessions per month</li>
-                        <li>Team building reviews</li>
-                        <li>Replay analysis</li>
-                        <li>Discord community access</li>
-                        <li>Strategy guides library</li>
-                    </ul>
-                    <a href="#" class="plan-button">GET STARTED</a>
-                </div>
-
-                <div class="plan-card featured">
-                    <div class="plan-title">PRO</div>
-                    <div class="plan-price">$79/MONTH</div>
-                    <ul class="plan-features">
-                        <li>5 coaching sessions per month</li>
-                        <li>Custom team building</li>
-                        <li>Live battle practice</li>
-                        <li>Tournament preparation</li>
-                        <li>EV/IV optimization help</li>
-                        <li>Priority Discord support</li>
-                        <li>Meta reports weekly</li>
-                    </ul>
-                    <a href="#" class="plan-button">MOST POPULAR</a>
-                </div>
-
-                <div class="plan-card">
-                    <div class="plan-title">CHAMPION</div>
-                    <div class="plan-price">$149/MONTH</div>
-                    <ul class="plan-features">
-                        <li>Unlimited coaching sessions</li>
-                        <li>Personal dedicated coach</li>
-                        <li>Tournament team prep</li>
-                        <li>Daily replay reviews</li>
-                        <li>Custom training regimen</li>
-                        <li>VIP Discord channel</li>
-                        <li>Early meta insights</li>
-                        <li>Competition sponsorship</li>
-                    </ul>
-                    <a href="#" class="plan-button">GO PRO</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="pokeball-divider">
-            <div class="pokeball"></div>
-        </div>
+    <div class="back-top">
+        <a href="#" onclick="window.scrollTo(0,0); return false;">BACK TO TOP</a>
     </div>
 
     <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h4>ABOUT METAPOKE</h4>
-                <p>The ultimate competitive Pokemon team building platform. Join thousands of trainers winning battles worldwide.</p>
-            </div>
-            <div class="footer-section">
-                <h4>RESOURCES</h4>
-                <a href="#" onclick="showPage('strategy'); return false;">Strategy Guides</a>
-                <a href="#" onclick="showPage('pokemon-list'); return false;">Tier Lists</a>
-                <a href="https://calc.pokemonshowdown.com/" target="_blank">Damage Calculator</a>
-                <a href="https://play.pokemonshowdown.com/" target="_blank">Pokemon Showdown</a>
-            </div>
-            <div class="footer-section">
-                <h4>LEARN</h4>
-                <a href="#">EV Training</a>
-                <a href="#">IV Breeding</a>
-                <a href="#">Type Matchups</a>
-                <a href="#">Move Sets</a>
-            </div>
-            <div class="footer-section">
-                <h4>COMMUNITY</h4>
-                <a href="#">Discord</a>
-                <a href="#">Twitter</a>
-                <a href="#">Reddit</a>
-                <a href="#">YouTube</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 METAPOKE. GOTTA BUILD EM ALL!</p>
-        </div>
+        <p>2026 METAPOKE - GOTTA BUILD EM ALL</p>
     </footer>
 
     <script src="script.js"></script>
-    <a href="#" class="back-top" onclick="window.scrollTo(0,0); return false;">TOP</a>
-
 </body>
 </html>
