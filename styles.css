@@ -261,6 +261,32 @@ nav a:hover {
 }
 
 /* Strategy Page */
+
+.strategy-page > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+.strategy-page {
+    position: relative;
+    background-image: url("showdown.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.strategy-page::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(245, 245, 245, 0.94);
+    z-index: 0;
+}
+
+
+
 .strategy-grid {
     max-width: 1200px;
     margin: 2rem auto;
